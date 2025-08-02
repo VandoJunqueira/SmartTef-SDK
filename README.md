@@ -87,9 +87,11 @@ $smartTef = new SmartTEF(new ApiConnectionCurl());
 
 Você pode configurar a SDK via `.env`:
 
-SMART_TEF_API_BASE_URL=https://api.smarttef.com.br
-SMART_TEF_API_TOKEN=seu_token
-SMART_TEF_API_SUBSCRIPTION_KEY=sua_chave
+| Variável                   | Descrição                      | Exemplo                          |
+|----------------------------|--------------------------------|----------------------------------|
+| `SMART_TEF_API_BASE_URL`    | URL base da API do SmartTEF   | `https://api.smarttef.com.br`    |
+| `SMART_TEF_API_TOKEN`       | Token de autorização          | `seu_token`                      |
+| `SMART_TEF_API_SUBSCRIPTION_KEY` | Chave de assinatura da API | `sua_chave`                    |
 
 ---
 
