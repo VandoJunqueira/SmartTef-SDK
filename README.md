@@ -37,15 +37,18 @@ Você também pode forçar manualmente a conexão desejada, se necessário.
 
 ### Laravel
 
+```php
 use SmartTef\SmartTEF;
 
 $smartTef = new SmartTEF();
 $smartTef->setAuthorization('seu_token', 'sua_subscription_key');
 
 $response = $smartTef->token->gerar(); // Exemplo de uso
+```
 
 ### PHP Puro
 
+```php
 require 'vendor/autoload.php';
 
 use SmartTef\SmartTEF;
@@ -54,6 +57,7 @@ $smartTef = new SmartTEF();
 $smartTef->setAuthorization('seu_token', 'sua_subscription_key');
 
 $response = $smartTef->store->listar(); // Exemplo de uso
+```
 
 ---
 
@@ -76,10 +80,12 @@ $response = $smartTef->store->listar(); // Exemplo de uso
 
 Você pode injetar a conexão diretamente:
 
+```php
 use SmartTef\SmartTEF;
 use SmartTef\ApiConnectionCurl;
 
 $smartTef = new SmartTEF(new ApiConnectionCurl());
+```
 
 ---
 
@@ -87,11 +93,11 @@ $smartTef = new SmartTEF(new ApiConnectionCurl());
 
 Você pode configurar a SDK via `.env`:
 
-| Variável                   | Descrição                      | Exemplo                          |
-|----------------------------|--------------------------------|----------------------------------|
-| `SMART_TEF_API_BASE_URL`    | URL base da API do SmartTEF   | `https://api.smarttef.com.br`    |
-| `SMART_TEF_API_TOKEN`       | Token de autorização          | `seu_token`                      |
-| `SMART_TEF_API_SUBSCRIPTION_KEY` | Chave de assinatura da API | `sua_chave`                    |
+| Variável                         | Descrição                   | Exemplo                       |
+| -------------------------------- | --------------------------- | ----------------------------- |
+| `SMART_TEF_API_BASE_URL`         | URL base da API do SmartTEF | `https://api.smarttef.com.br` |
+| `SMART_TEF_API_TOKEN`            | Token de autorização        | `seu_token`                   |
+| `SMART_TEF_API_SUBSCRIPTION_KEY` | Chave de assinatura da API  | `sua_chave`                   |
 
 ---
 
