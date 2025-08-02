@@ -1,0 +1,23 @@
+{
+    "name": "vandojunqueira/smarttef-sdk",
+    "description": "SDK para integração com SmartTEF",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vando Junqueira",
+            "homepage": "https://github.com/VandoJunqueira"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SmartTEF\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "illuminate/support": "^12.21"
+    }
+}
